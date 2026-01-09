@@ -122,3 +122,124 @@ function alternate(str){
   }
   return result;
 }
+
+
+
+// NUMBERS PROBLEMS
+// JavaScript Number Questions
+
+
+// 1. Round a Number
+function roundNum(){
+  return Math.round(4.7);
+}
+
+// 2. Ceil a Decimal
+function ceilNum(){
+  return Math.ceil(5.3);
+}
+
+// 3. Floor a Decimal
+function floorNum(){
+  return Math.floor(8.9);
+}
+
+// 4. Random number (0–1)
+function random01(){
+  return Math.random();
+}
+
+// 5. Random integer (0–9)
+function random0to9(){
+  return Math.floor(Math.random() * 10);
+}
+
+// 6. Random integer (1–100)
+function random1to100(){
+  return Math.floor(Math.random() * 100) + 1;
+}
+
+// 7. String to Integer
+function stringToInt(){
+  return parseInt("42");
+}
+
+// 8. String to Float
+function stringToFloat(){
+  return parseFloat("3.14159");
+}
+
+// 9. Round User Input
+function roundInput(num){
+  return Math.round(num);
+}
+
+// 10. Dice Simulator (1–6)
+function dice(){
+  return Math.floor(Math.random() * 6) + 1;
+}
+
+// 11. Temperature Rounding
+function tempRound(temp){
+  return Math.round(temp);
+}
+
+// 12. Ceil Shopping Price
+function shoppingPrice(){
+  return Math.ceil(9.25);
+}
+
+// 13. Parse and Add
+function addStrings(){
+  let a = parseInt("10");
+  let b = parseFloat("5.5");
+  return a + b;
+}
+
+// 14. Random Even Number (2–20)
+function randomEven(){
+  let num = Math.floor(Math.random() * 10) + 1;
+  return num * 2;
+}
+
+// 15. Check if Number or Not
+function checkNumber(input){
+  let n = parseInt(input);
+  if(isNaN(n))
+    return "Not a Number";
+  else
+    return "Valid Number";
+}
+
+// 16. Round All Prices in Array
+function roundPrices(arr){
+  let result = [];
+  for(let i=0;i<arr.length;i++){
+    result.push(Math.round(arr[i]));
+  }
+  return result;
+}
+
+// 17. Coin Toss
+function coinToss(){
+  let toss = Math.floor(Math.random() * 2);
+  if(toss == 0)
+    return "Heads";
+  else
+    return "Tails";
+}
+
+// 18. Random Integer (Min–Max)
+function randomRange(min, max){
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// 19. Extract Number from Text
+function extractNumber(){
+  return parseFloat("Total: 45.90 USD");
+}
+
+// 20. Round to Nearest 0.5
+function roundHalf(num){
+  return Math.round(num * 2) / 2;
+}
